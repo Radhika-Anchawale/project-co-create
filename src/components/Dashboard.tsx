@@ -109,13 +109,8 @@ const Dashboard = () => {
         {sortedAnime.map((anime) => (
           <AnimeCard
             key={anime.id}
-            title={anime.title}
-            image={anime.image}
-            rating={anime.rating}
-            genre={anime.genre}
-            status={anime.status}
-            progress={anime.progress}
-            year={anime.year}
+            anime={anime}
+            viewMode={viewMode}
           />
         ))}
       </div>
